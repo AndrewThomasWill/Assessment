@@ -5,9 +5,9 @@ Inside this MasterTestProject, I've created a folder named "Framework". <br />
 <br />
 The structure is the following: <br />
 <br />
-Framework - Folder <br />
+ Framework - Folder <br />
 | <br />
-|__ (Product) (Ex. XoiSite) - Folder - (Also called 'Module Space') <br />
+|__   (Product) (Ex. XoiSite) - Folder - (Also called 'Module Space') <br />
      | <br />
      |__ (Page or Screen) (Ex. Pilot) - Module/Script <br />
 
