@@ -5,7 +5,7 @@ Inside this MasterTestProject, I've created a folder named "Framework".
 
 The structure is the following:
 
-Framework - Folder
+Framework - Folder <br />
 |
 |__ (Product) (Ex. XoiSite) - Folder - (Also called 'Module Space')
      |
