@@ -7,9 +7,9 @@ The structure is the following: <br />
 <br />
  Framework - Folder <br />
 | <br />
-|__   (Product) (Ex. XoiSite) - Folder - (Also called 'Module Space') <br />
-     | <br />
-     |__ (Page or Screen) (Ex. Pilot) - Module/Script <br />
+|__ (Product) (Ex. XoiSite) - Folder - (Also called 'Module Space') <br />
+_____ | <br />
+_____ | __ (Page or Screen) (Ex. Pilot) - Module/Script <br />
 
 These 'Module Spaces' could be broken down into different Products that are supported by a Framework.
 For example, one could be a website, one could be a Desktop application, one could be a Mobile application.
