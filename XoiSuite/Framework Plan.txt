@@ -1,0 +1,43 @@
+1. Fill out each one of the fields in IE
+2. 
+
+Function Comment Format
+/*
+ Function: FillTextByKeys
+
+ Fills an object with text by using 'Keys' to key in the text.
+
+ Parameters: 
+
+ currentPage  - String - URL of the page with the object (must be current page)
+ objectName   - String - Name of the object to fill with text.
+ fillText     - String - Text to fill the object with
+
+*/
+
+
+Script
+- Framework (Folder)
+    - XoiSite (Folder)
+	    - SiteGlobal (Module)
+		    - pilotPageURL = "";
+			- blinkWaitSeconds = 1;
+			- quickWaitSeconds = 2;
+			- moderateWaitSeconds = 5;
+			- maxWaitSeconds = 10;
+			
+			- FillTextByKeys(pageURL, objectName, fillText)
+			- WaitForObjectByXpath(page, xPath)
+			- WaitForPageLoad(pageURL)
+	    - Pilot (Module)
+		    -
+			
+		    - FillContactName(name)
+			- FillJobTitle(title)
+			- FillCompanyName(companyName)
+			- FillCompanyEmail(email)
+			- FillPhoneNumber(phoneNumber)
+			- ClickSubmitButton
+	- UtilityModules (Folder)
+	    - Utility (Module)
+		    

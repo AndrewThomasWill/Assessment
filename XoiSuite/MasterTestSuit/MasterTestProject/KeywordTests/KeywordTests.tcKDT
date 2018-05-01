@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Root signature="{9576DAFD-0ADD-41A8-9897-C72F150AF6BB}" version="12.0">
+	<children>
+		<child name="Submit_With_Correct_Values_In_All_Fields" key="{AAF89A5B-99B8-4A3C-9FD9-7B1E7C67B8D6}" type="Keyword Test" typeId="{B9D9273E-7266-43E0-BF02-97F168593604}" pluginName="Keyword Testing">
+			<data path="Submit_With_Correct_Values_In_All_Fields.tcKDTest" />
+		</child>
+		<child name="Submit_With_Correct_Values_Only_In_Required_Fields" key="{5A58812B-AD15-4628-B3C9-153B4BAAA99C}" type="Keyword Test" typeId="{B9D9273E-7266-43E0-BF02-97F168593604}" pluginName="Keyword Testing">
+			<data path="Submit_With_Correct_Values_Only_In_Required_Fields.tcKDTest" />
+		</child>
+		<child name="Required_Input_Error_Messages" key="{BA45C1E6-EFFF-4B5B-B71A-3340552EA4E8}" type="Keyword Test" typeId="{B9D9273E-7266-43E0-BF02-97F168593604}" pluginName="Keyword Testing">
+			<data path="Required_Input_Error_Messages.tcKDTest" />
+		</child>
+	</children>
+	<folders>
+		<folder caption="Test Cases" description="A logical folder that is used to organize project items and elements." moniker="">
+			<references>
+				<ref key="{AAF89A5B-99B8-4A3C-9FD9-7B1E7C67B8D6}" />
+				<ref key="{5A58812B-AD15-4628-B3C9-153B4BAAA99C}" />
+				<ref key="{BA45C1E6-EFFF-4B5B-B71A-3340552EA4E8}" />
+			</references>
+		</folder>
+	</folders>
+</Root>

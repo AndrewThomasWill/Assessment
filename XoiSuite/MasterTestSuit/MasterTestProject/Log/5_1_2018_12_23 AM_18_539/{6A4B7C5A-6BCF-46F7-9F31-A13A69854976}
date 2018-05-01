@@ -1,0 +1,582 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE Nodes [
+
+<!ENTITY % NameValue "CDATA">
+<!ENTITY % PropType "(I|S|D|L|H|B)">
+<!ENTITY % VersionValue "CDATA">
+
+<!ELEMENT Prp (#PCDATA)>
+<!ELEMENT Node (Node|Prp)*>
+<!ELEMENT Nodes (Node)+>
+
+<!ATTLIST Nodes version CDATA "1">
+
+<!ATTLIST Node name CDATA #REQUIRED>
+
+<!ATTLIST Prp name CDATA #REQUIRED>
+<!ATTLIST Prp type CDATA #REQUIRED>
+<!ATTLIST Prp value CDATA #REQUIRED>
+]>
+<Nodes version="1">
+	<Node name="root">
+		<Node name="message 17">
+			<Node name="visualizer">
+				<Node name="current">
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="object bottom" type="I" value="1020"/>
+					<Prp name="click point x" type="I" value="-1"/>
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="datetime" type="D" value="43221.2246156597"/>
+					<Prp name="storage file name" type="S" value=""/>
+					<Prp name="line #" type="I" value="45"/>
+					<Prp name="object left" type="I" value="1076"/>
+					<Prp name="object right" type="I" value="1577"/>
+					<Prp name="object name" type="S" value="Sys.Browser(&quot;iexplore&quot;).Page(&quot;http://info.xoi.io/pilot&quot;).Panel(1).Panel(0).Panel(0).Panel(0).Panel(0).Panel(0).Panel(0).Panel(2).Panel(0).Panel(0).Panel(0).Panel(0).Panel(&quot;hs_form_target_module_13885066546126190&quot;).Form(0).Panel(3).Panel(0).EmailInput(&quot;email&quot;)"/>
+					<Prp name="image file name" type="S" value="visImage8.png"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="object top" type="I" value="985"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="click point y" type="I" value="-1"/>
+				</Node>
+			</Node>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="date" type="D" value="43221.0162878241"/>
+			<Prp name="type" type="I" value="1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="line no" type="I" value="45"/>
+			<Prp name="id" type="I" value="17"/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="message" type="S" value="Keyboard input."/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="remarks" type="S" value="'First.Last@CompanyName.com' was sent as a keyboard input to the following window or control.&#xA;&#xA;Tested object:&#xA;Sys.Browser(&quot;iexplore&quot;).Page(&quot;http://info.xoi.io/pilot&quot;).Panel(1).Panel(0).Panel(0).Panel(0).Panel(0).Panel(0).Panel(0).Panel(2).Panel(0).Panel(0).Panel(0).Panel(0).Panel(&quot;hs_form_target_module_13885066546126190&quot;).Form(0).Panel(3).Panel(0).EmailInput(&quot;email&quot;)"/>
+		</Node>
+		<Node name="message 1">
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="date" type="D" value="43221.016243588"/>
+			<Prp name="type" type="I" value="1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="line no" type="I" value="342"/>
+			<Prp name="id" type="I" value="1"/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="message" type="S" value="Navigating to the http://info.xoi.io/pilot page."/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="remarks" type="S" value="URL: http://info.xoi.io/pilot&#xA;&#xA;Sys.Browser(&quot;iexplore&quot;)"/>
+		</Node>
+		<Node name="child data"/>
+		<Node name="message 2">
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="date" type="D" value="43221.0162447569"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="line no" type="I" value="348"/>
+			<Prp name="id" type="I" value="2"/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="message" type="S" value="Browser: iexplore launched and Page: http://info.xoi.io/pilot was navigated to."/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="remarks" type="S" value=""/>
+		</Node>
+		<Node name="message 3">
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="date" type="D" value="43221.0162462037"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="line no" type="I" value="121"/>
+			<Prp name="id" type="I" value="3"/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="message" type="S" value="Page: http://info.xoi.io/pilot loaded successfully after 0 times."/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="remarks" type="S" value=""/>
+		</Node>
+		<Node name="message 11">
+			<Node name="visualizer">
+				<Node name="current">
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="object bottom" type="I" value="945"/>
+					<Prp name="click point x" type="I" value="-1"/>
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="datetime" type="D" value="43221.2245999653"/>
+					<Prp name="storage file name" type="S" value=""/>
+					<Prp name="line #" type="I" value="44"/>
+					<Prp name="object left" type="I" value="1076"/>
+					<Prp name="object right" type="I" value="1577"/>
+					<Prp name="object name" type="S" value="Sys.Browser(&quot;iexplore&quot;).Page(&quot;http://info.xoi.io/pilot&quot;).Panel(1).Panel(0).Panel(0).Panel(0).Panel(0).Panel(0).Panel(0).Panel(2).Panel(0).Panel(0).Panel(0).Panel(0).Panel(&quot;hs_form_target_module_13885066546126190&quot;).Form(0).Panel(2).Panel(0).Textbox(&quot;company&quot;)"/>
+					<Prp name="image file name" type="S" value="visImage4.png"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="object top" type="I" value="909"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="click point y" type="I" value="-1"/>
+				</Node>
+			</Node>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="date" type="D" value="43221.016267419"/>
+			<Prp name="type" type="I" value="1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="line no" type="I" value="44"/>
+			<Prp name="id" type="I" value="11"/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="message" type="S" value="Keyboard input."/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="remarks" type="S" value="'[Del]' was sent as a keyboard input to the following window or control.&#xA;&#xA;Tested object:&#xA;Sys.Browser(&quot;iexplore&quot;).Page(&quot;http://info.xoi.io/pilot&quot;).Panel(1).Panel(0).Panel(0).Panel(0).Panel(0).Panel(0).Panel(0).Panel(2).Panel(0).Panel(0).Panel(0).Panel(0).Panel(&quot;hs_form_target_module_13885066546126190&quot;).Form(0).Panel(2).Panel(0).Textbox(&quot;company&quot;)"/>
+		</Node>
+		<Node name="message 8">
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="date" type="D" value="43221.0162605208"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="line no" type="I" value="121"/>
+			<Prp name="id" type="I" value="8"/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="message" type="S" value="Page: http://info.xoi.io/pilot loaded successfully after 0 times."/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="remarks" type="S" value=""/>
+		</Node>
+		<Node name="message 10">
+			<Node name="visualizer">
+				<Node name="current">
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="object bottom" type="I" value="945"/>
+					<Prp name="click point x" type="I" value="-1"/>
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="datetime" type="D" value="43221.224598044"/>
+					<Prp name="storage file name" type="S" value=""/>
+					<Prp name="line #" type="I" value="43"/>
+					<Prp name="object left" type="I" value="1076"/>
+					<Prp name="object right" type="I" value="1577"/>
+					<Prp name="object name" type="S" value="Sys.Browser(&quot;iexplore&quot;).Page(&quot;http://info.xoi.io/pilot&quot;).Panel(1).Panel(0).Panel(0).Panel(0).Panel(0).Panel(0).Panel(0).Panel(2).Panel(0).Panel(0).Panel(0).Panel(0).Panel(&quot;hs_form_target_module_13885066546126190&quot;).Form(0).Panel(2).Panel(0).Textbox(&quot;company&quot;)"/>
+					<Prp name="image file name" type="S" value="visImage3.png"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="object top" type="I" value="909"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="click point y" type="I" value="-1"/>
+				</Node>
+			</Node>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="date" type="D" value="43221.0162656018"/>
+			<Prp name="type" type="I" value="1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="line no" type="I" value="43"/>
+			<Prp name="id" type="I" value="10"/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="message" type="S" value="Keyboard input."/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="remarks" type="S" value="'^a' was sent as a keyboard input to the following window or control.&#xA;&#xA;Tested object:&#xA;Sys.Browser(&quot;iexplore&quot;).Page(&quot;http://info.xoi.io/pilot&quot;).Panel(1).Panel(0).Panel(0).Panel(0).Panel(0).Panel(0).Panel(0).Panel(2).Panel(0).Panel(0).Panel(0).Panel(0).Panel(&quot;hs_form_target_module_13885066546126190&quot;).Form(0).Panel(2).Panel(0).Textbox(&quot;company&quot;)"/>
+		</Node>
+		<Node name="message 7">
+			<Node name="visualizer">
+				<Node name="current">
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="object bottom" type="I" value="793"/>
+					<Prp name="click point x" type="I" value="-1"/>
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="datetime" type="D" value="43221.2245877894"/>
+					<Prp name="storage file name" type="S" value=""/>
+					<Prp name="line #" type="I" value="45"/>
+					<Prp name="object left" type="I" value="1076"/>
+					<Prp name="object right" type="I" value="1577"/>
+					<Prp name="object name" type="S" value="Sys.Browser(&quot;iexplore&quot;).Page(&quot;http://info.xoi.io/pilot&quot;).Panel(1).Panel(0).Panel(0).Panel(0).Panel(0).Panel(0).Panel(0).Panel(2).Panel(0).Panel(0).Panel(0).Panel(0).Panel(&quot;hs_form_target_module_13885066546126190&quot;).Form(0).Panel(0).Panel(0).Textbox(&quot;firstname&quot;)"/>
+					<Prp name="image file name" type="S" value="visImage2.png"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="object top" type="I" value="758"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="click point y" type="I" value="-1"/>
+				</Node>
+			</Node>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="date" type="D" value="43221.016257037"/>
+			<Prp name="type" type="I" value="1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="line no" type="I" value="45"/>
+			<Prp name="id" type="I" value="7"/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="message" type="S" value="Keyboard input."/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="remarks" type="S" value="'First Last' was sent as a keyboard input to the following window or control.&#xA;&#xA;Tested object:&#xA;Sys.Browser(&quot;iexplore&quot;).Page(&quot;http://info.xoi.io/pilot&quot;).Panel(1).Panel(0).Panel(0).Panel(0).Panel(0).Panel(0).Panel(0).Panel(2).Panel(0).Panel(0).Panel(0).Panel(0).Panel(&quot;hs_form_target_module_13885066546126190&quot;).Form(0).Panel(0).Panel(0).Textbox(&quot;firstname&quot;)"/>
+		</Node>
+		<Node name="stack"/>
+		<Node name="message 21">
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="date" type="D" value="43221.0163035995"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="line no" type="I" value="175"/>
+			<Prp name="id" type="I" value="21"/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="message" type="S" value="Asserted given URL: http://www.xoi.io/pilot-thank-you/* Exists and is the current page."/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="remarks" type="S" value=""/>
+		</Node>
+		<Node name="message 12">
+			<Node name="visualizer">
+				<Node name="current">
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="object bottom" type="I" value="945"/>
+					<Prp name="click point x" type="I" value="-1"/>
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="datetime" type="D" value="43221.224601875"/>
+					<Prp name="storage file name" type="S" value=""/>
+					<Prp name="line #" type="I" value="45"/>
+					<Prp name="object left" type="I" value="1076"/>
+					<Prp name="object right" type="I" value="1577"/>
+					<Prp name="object name" type="S" value="Sys.Browser(&quot;iexplore&quot;).Page(&quot;http://info.xoi.io/pilot&quot;).Panel(1).Panel(0).Panel(0).Panel(0).Panel(0).Panel(0).Panel(0).Panel(2).Panel(0).Panel(0).Panel(0).Panel(0).Panel(&quot;hs_form_target_module_13885066546126190&quot;).Form(0).Panel(2).Panel(0).Textbox(&quot;company&quot;)"/>
+					<Prp name="image file name" type="S" value="visImage5.png"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="object top" type="I" value="909"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="click point y" type="I" value="-1"/>
+				</Node>
+			</Node>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="date" type="D" value="43221.0162714815"/>
+			<Prp name="type" type="I" value="1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="line no" type="I" value="45"/>
+			<Prp name="id" type="I" value="12"/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="message" type="S" value="Keyboard input."/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="remarks" type="S" value="'Company Name' was sent as a keyboard input to the following window or control.&#xA;&#xA;Tested object:&#xA;Sys.Browser(&quot;iexplore&quot;).Page(&quot;http://info.xoi.io/pilot&quot;).Panel(1).Panel(0).Panel(0).Panel(0).Panel(0).Panel(0).Panel(0).Panel(2).Panel(0).Panel(0).Panel(0).Panel(0).Panel(&quot;hs_form_target_module_13885066546126190&quot;).Form(0).Panel(2).Panel(0).Textbox(&quot;company&quot;)"/>
+		</Node>
+		<Node name="message 4">
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="date" type="D" value="43221.0162492245"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="line no" type="I" value="209"/>
+			<Prp name="id" type="I" value="4"/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="message" type="S" value="Object found at Page: http://info.xoi.io/pilot and xPath: //input[@name='firstname']"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="remarks" type="S" value=""/>
+		</Node>
+		<Node name="message 9">
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="date" type="D" value="43221.0162635185"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="line no" type="I" value="209"/>
+			<Prp name="id" type="I" value="9"/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="message" type="S" value="Object found at Page: http://info.xoi.io/pilot and xPath: //input[@name='company']"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="remarks" type="S" value=""/>
+		</Node>
+		<Node name="message 6">
+			<Node name="visualizer">
+				<Node name="current">
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="object bottom" type="I" value="793"/>
+					<Prp name="click point x" type="I" value="-1"/>
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="datetime" type="D" value="43221.2245858912"/>
+					<Prp name="storage file name" type="S" value=""/>
+					<Prp name="line #" type="I" value="44"/>
+					<Prp name="object left" type="I" value="1076"/>
+					<Prp name="object right" type="I" value="1577"/>
+					<Prp name="object name" type="S" value="Sys.Browser(&quot;iexplore&quot;).Page(&quot;http://info.xoi.io/pilot&quot;).Panel(1).Panel(0).Panel(0).Panel(0).Panel(0).Panel(0).Panel(0).Panel(2).Panel(0).Panel(0).Panel(0).Panel(0).Panel(&quot;hs_form_target_module_13885066546126190&quot;).Form(0).Panel(0).Panel(0).Textbox(&quot;firstname&quot;)"/>
+					<Prp name="image file name" type="S" value="visImage1.png"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="object top" type="I" value="758"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="click point y" type="I" value="-1"/>
+				</Node>
+			</Node>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="date" type="D" value="43221.0162534375"/>
+			<Prp name="type" type="I" value="1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="line no" type="I" value="44"/>
+			<Prp name="id" type="I" value="6"/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="message" type="S" value="Keyboard input."/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="remarks" type="S" value="'[Del]' was sent as a keyboard input to the following window or control.&#xA;&#xA;Tested object:&#xA;Sys.Browser(&quot;iexplore&quot;).Page(&quot;http://info.xoi.io/pilot&quot;).Panel(1).Panel(0).Panel(0).Panel(0).Panel(0).Panel(0).Panel(0).Panel(2).Panel(0).Panel(0).Panel(0).Panel(0).Panel(&quot;hs_form_target_module_13885066546126190&quot;).Form(0).Panel(0).Panel(0).Textbox(&quot;firstname&quot;)"/>
+		</Node>
+		<Node name="message 16">
+			<Node name="visualizer">
+				<Node name="current">
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="object bottom" type="I" value="1020"/>
+					<Prp name="click point x" type="I" value="-1"/>
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="datetime" type="D" value="43221.2246137732"/>
+					<Prp name="storage file name" type="S" value=""/>
+					<Prp name="line #" type="I" value="44"/>
+					<Prp name="object left" type="I" value="1076"/>
+					<Prp name="object right" type="I" value="1577"/>
+					<Prp name="object name" type="S" value="Sys.Browser(&quot;iexplore&quot;).Page(&quot;http://info.xoi.io/pilot&quot;).Panel(1).Panel(0).Panel(0).Panel(0).Panel(0).Panel(0).Panel(0).Panel(2).Panel(0).Panel(0).Panel(0).Panel(0).Panel(&quot;hs_form_target_module_13885066546126190&quot;).Form(0).Panel(3).Panel(0).EmailInput(&quot;email&quot;)"/>
+					<Prp name="image file name" type="S" value="visImage7.png"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="object top" type="I" value="985"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="click point y" type="I" value="-1"/>
+				</Node>
+			</Node>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="date" type="D" value="43221.0162812732"/>
+			<Prp name="type" type="I" value="1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="line no" type="I" value="44"/>
+			<Prp name="id" type="I" value="16"/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="message" type="S" value="Keyboard input."/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="remarks" type="S" value="'[Del]' was sent as a keyboard input to the following window or control.&#xA;&#xA;Tested object:&#xA;Sys.Browser(&quot;iexplore&quot;).Page(&quot;http://info.xoi.io/pilot&quot;).Panel(1).Panel(0).Panel(0).Panel(0).Panel(0).Panel(0).Panel(0).Panel(2).Panel(0).Panel(0).Panel(0).Panel(0).Panel(&quot;hs_form_target_module_13885066546126190&quot;).Form(0).Panel(3).Panel(0).EmailInput(&quot;email&quot;)"/>
+		</Node>
+		<Node name="message 20">
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="date" type="D" value="43221.0162963657"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="line no" type="I" value="105"/>
+			<Prp name="id" type="I" value="20"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="message" type="S" value="Succfully Clicked Submit button."/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="remarks" type="S" value=""/>
+		</Node>
+		<Node name="message 14">
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="date" type="D" value="43221.0162773495"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="line no" type="I" value="209"/>
+			<Prp name="id" type="I" value="14"/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="message" type="S" value="Object found at Page: http://info.xoi.io/pilot and xPath: //input[@name='email']"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="remarks" type="S" value=""/>
+		</Node>
+		<Node name="message 0">
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="date" type="D" value="43221.0161968982"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="as html" type="B" value="-1"/>
+			<Prp name="line no" type="I" value="342"/>
+			<Prp name="id" type="I" value="0"/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="message" type="S" value="Microsoft Internet Explorer was launched."/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="remarks" type="S" value="&lt;html&gt;&lt;head&gt;&lt;style&gt;td{font-family: Courier New, Consolas, Segoe UI; font-size : 14;}&lt;/style&gt;&lt;/head&gt;											  &lt;body&gt;											  &lt;table cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;&gt;											  &lt;tr&gt;&lt;td&gt;&lt;b&gt;Browser:&lt;/b&gt;&lt;/td&gt;&lt;td&gt;Microsoft Internet Explorer ver.11.0.16299.371 (x86)&lt;/td&gt;&lt;/tr&gt;											  &lt;tr&gt;&lt;td&gt;&lt;b&gt;Executable:&lt;/b&gt;&lt;/td&gt;&lt;td&gt;C:\Program Files\Internet Explorer\IEXPLORE.EXE&lt;/td&gt;&lt;/tr&gt;											  &lt;tr&gt;&lt;td style=&quot;padding-right: 8px;&quot;&gt;&lt;b&gt;Command-line args:&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;											  &lt;tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;URL:&lt;/b&gt;&lt;/td&gt;&lt;td&gt;http://info.xoi.io/pilot&lt;/td&gt;&lt;/tr&gt;											  &lt;tr&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;PID:&lt;/b&gt;&lt;/td&gt;&lt;td&gt;10384&lt;/td&gt;&lt;/tr&gt;											  &lt;/table&gt;&lt;/body&gt;&lt;/html&gt;"/>
+		</Node>
+		<Node name="message 5">
+			<Node name="visualizer">
+				<Node name="current">
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="object bottom" type="I" value="793"/>
+					<Prp name="click point x" type="I" value="-1"/>
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="datetime" type="D" value="43221.2245837037"/>
+					<Prp name="storage file name" type="S" value=""/>
+					<Prp name="line #" type="I" value="43"/>
+					<Prp name="object left" type="I" value="1076"/>
+					<Prp name="object right" type="I" value="1577"/>
+					<Prp name="object name" type="S" value="Sys.Browser(&quot;iexplore&quot;).Page(&quot;http://info.xoi.io/pilot&quot;).Panel(1).Panel(0).Panel(0).Panel(0).Panel(0).Panel(0).Panel(0).Panel(2).Panel(0).Panel(0).Panel(0).Panel(0).Panel(&quot;hs_form_target_module_13885066546126190&quot;).Form(0).Panel(0).Panel(0).Textbox(&quot;firstname&quot;)"/>
+					<Prp name="image file name" type="S" value="visImage0.png"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="object top" type="I" value="758"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="click point y" type="I" value="-1"/>
+				</Node>
+			</Node>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="date" type="D" value="43221.0162515278"/>
+			<Prp name="type" type="I" value="1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="line no" type="I" value="43"/>
+			<Prp name="id" type="I" value="5"/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="message" type="S" value="Keyboard input."/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="remarks" type="S" value="'^a' was sent as a keyboard input to the following window or control.&#xA;&#xA;Tested object:&#xA;Sys.Browser(&quot;iexplore&quot;).Page(&quot;http://info.xoi.io/pilot&quot;).Panel(1).Panel(0).Panel(0).Panel(0).Panel(0).Panel(0).Panel(0).Panel(2).Panel(0).Panel(0).Panel(0).Panel(0).Panel(&quot;hs_form_target_module_13885066546126190&quot;).Form(0).Panel(0).Panel(0).Textbox(&quot;firstname&quot;)"/>
+		</Node>
+		<Node name="message 13">
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="date" type="D" value="43221.0162746181"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="line no" type="I" value="121"/>
+			<Prp name="id" type="I" value="13"/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="message" type="S" value="Page: http://info.xoi.io/pilot loaded successfully after 0 times."/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="remarks" type="S" value=""/>
+		</Node>
+		<Node name="units">
+			<Prp name="unit 0" type="S" value="{4444536C-1A99-42A1-AA79-955771C243C6}"/>
+			<Prp name="unit 1" type="S" value="{7A9AA478-539F-447B-864B-B217340CEDC8}"/>
+		</Node>
+		<Node name="message 18">
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="date" type="D" value="43221.0162928704"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="line no" type="I" value="209"/>
+			<Prp name="id" type="I" value="18"/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="message" type="S" value="Object found at Page: http://info.xoi.io/pilot and xPath: //input[@type='submit']"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="remarks" type="S" value=""/>
+		</Node>
+		<Node name="message 15">
+			<Node name="visualizer">
+				<Node name="current">
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="object bottom" type="I" value="1020"/>
+					<Prp name="click point x" type="I" value="-1"/>
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="datetime" type="D" value="43221.224611794"/>
+					<Prp name="storage file name" type="S" value=""/>
+					<Prp name="line #" type="I" value="43"/>
+					<Prp name="object left" type="I" value="1076"/>
+					<Prp name="object right" type="I" value="1577"/>
+					<Prp name="object name" type="S" value="Sys.Browser(&quot;iexplore&quot;).Page(&quot;http://info.xoi.io/pilot&quot;).Panel(1).Panel(0).Panel(0).Panel(0).Panel(0).Panel(0).Panel(0).Panel(2).Panel(0).Panel(0).Panel(0).Panel(0).Panel(&quot;hs_form_target_module_13885066546126190&quot;).Form(0).Panel(3).Panel(0).EmailInput(&quot;email&quot;)"/>
+					<Prp name="image file name" type="S" value="visImage6.png"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="object top" type="I" value="985"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="click point y" type="I" value="-1"/>
+				</Node>
+			</Node>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="date" type="D" value="43221.0162793171"/>
+			<Prp name="type" type="I" value="1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="line no" type="I" value="43"/>
+			<Prp name="id" type="I" value="15"/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="message" type="S" value="Keyboard input."/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="remarks" type="S" value="'^a' was sent as a keyboard input to the following window or control.&#xA;&#xA;Tested object:&#xA;Sys.Browser(&quot;iexplore&quot;).Page(&quot;http://info.xoi.io/pilot&quot;).Panel(1).Panel(0).Panel(0).Panel(0).Panel(0).Panel(0).Panel(0).Panel(2).Panel(0).Panel(0).Panel(0).Panel(0).Panel(&quot;hs_form_target_module_13885066546126190&quot;).Form(0).Panel(3).Panel(0).EmailInput(&quot;email&quot;)"/>
+		</Node>
+		<Node name="message 19">
+			<Node name="visualizer">
+				<Node name="current">
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="object bottom" type="I" value="459"/>
+					<Prp name="click point x" type="I" value="1158"/>
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="datetime" type="D" value="43221.2246278356"/>
+					<Prp name="storage file name" type="S" value=""/>
+					<Prp name="line #" type="I" value="104"/>
+					<Prp name="object left" type="I" value="1075"/>
+					<Prp name="object right" type="I" value="1241"/>
+					<Prp name="object name" type="S" value="Sys.Browser(&quot;iexplore&quot;).Page(&quot;http://info.xoi.io/pilot&quot;).Panel(1).Panel(0).Panel(0).Panel(0).Panel(0).Panel(0).Panel(0).Panel(2).Panel(0).Panel(0).Panel(0).Panel(0).Panel(&quot;hs_form_target_module_13885066546126190&quot;).Form(0).Panel(5).Panel(1).SubmitButton(&quot;Submit&quot;)"/>
+					<Prp name="image file name" type="S" value="visImage9.png"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="object top" type="I" value="405"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="click point y" type="I" value="432"/>
+				</Node>
+			</Node>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="date" type="D" value="43221.0162956134"/>
+			<Prp name="type" type="I" value="1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="line no" type="I" value="104"/>
+			<Prp name="id" type="I" value="19"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="message" type="S" value="The window was clicked with the left mouse button."/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="remarks" type="S" value="A click at point (83, 27) with no key pressed.&#xA;&#xA;Tested object:&#xA;Sys.Browser(&quot;iexplore&quot;).Page(&quot;http://info.xoi.io/pilot&quot;).Panel(1).Panel(0).Panel(0).Panel(0).Panel(0).Panel(0).Panel(0).Panel(2).Panel(0).Panel(0).Panel(0).Panel(0).Panel(&quot;hs_form_target_module_13885066546126190&quot;).Form(0).Panel(5).Panel(1).SubmitButton(&quot;Submit&quot;)"/>
+		</Node>
+		<Prp name="status" type="I" value="0"/>
+	</Node>
+</Nodes>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Root signature="{9252F941-DB23-4FCA-AA50-858B33BB4A19}" version="11.40">
+	<children>
+		<child name="Pilot" key="{7A9AA478-539F-447B-864B-B217340CEDC8}" type="Script Unit" typeId="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}" pluginName="Script">
+			<data path="Framework\XoiSite\Pilot.js" />
+		</child>
+		<child name="SiteGlobal" key="{4444536C-1A99-42A1-AA79-955771C243C6}" type="Script Unit" typeId="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}" pluginName="Script">
+			<data path="Framework\XoiSite\SiteGlobal.js" />
+		</child>
+	</children>
+	<folders>
+		<folder caption="Framework" description="A logical folder that is used to organize project items and elements." moniker="">
+			<folders>
+				<folder caption="XoiSite" description="A logical folder that is used to organize project items and elements." moniker="">
+					<references>
+						<ref key="{7A9AA478-539F-447B-864B-B217340CEDC8}" />
+						<ref key="{4444536C-1A99-42A1-AA79-955771C243C6}" />
+					</references>
+				</folder>
+			</folders>
+		</folder>
+	</folders>
+</Root>
