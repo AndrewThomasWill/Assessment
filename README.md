@@ -1,15 +1,15 @@
 # Assessment
 
 TestComplete format creates a "TestSuite" (in this case named MasterTestSuite) and a "TestProject" (in this case named MasterTestProject).
-Inside this MasterTestProject, I've created a folder named "Framework".
-
-The structure is the following:
-
+Inside this MasterTestProject, I've created a folder named "Framework". <br />
+<br />
+The structure is the following: <br />
+<br />
 Framework - Folder <br />
-|
-|__ (Product) (Ex. XoiSite) - Folder - (Also called 'Module Space')
-     |
-     |__ (Page or Screen) (Ex. Pilot) - Module/Script
+| <br />
+|__ (Product) (Ex. XoiSite) - Folder - (Also called 'Module Space') <br />
+     | <br />
+     |__ (Page or Screen) (Ex. Pilot) - Module/Script <br />
 
 These 'Module Spaces' could be broken down into different Products that are supported by a Framework.
 For example, one could be a website, one could be a Desktop application, one could be a Mobile application.
