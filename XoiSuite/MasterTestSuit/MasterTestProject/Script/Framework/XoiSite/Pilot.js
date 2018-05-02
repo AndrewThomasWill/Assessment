@@ -68,12 +68,7 @@ function FillCompanyName(companyName)
 */
 function FillCompanyEmail(email)
 {
-  var result = SiteGlobal.FillTextByKeys(SiteGlobal.pilotPageURL, "email", email);
-  //var page = SiteGlobal.GetBrowserPage(SiteGlobal.pilotPageURL);
-  
-  //page.SetFocus();
-  
-  return result;
+  return SiteGlobal.FillTextByKeys(SiteGlobal.pilotPageURL, "email", email);
 }
 
 /*
