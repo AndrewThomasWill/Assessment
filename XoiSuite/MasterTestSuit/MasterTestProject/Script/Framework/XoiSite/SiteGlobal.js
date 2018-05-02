@@ -16,7 +16,7 @@ var moderateWaitSeconds = 5;
 var maxWaitSeconds = 10;
 
 // Environment Variables
-var currentBrowserShortName = "chrome";
+var currentBrowserShortName = "ieplore";
 
 /*
  Function: FillTextByKeys
