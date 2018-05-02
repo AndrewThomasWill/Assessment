@@ -1,23 +1,55 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <Root signature="{9576DAFD-0ADD-41A8-9897-C72F150AF6BB}" version="12.0">
 	<children>
-		<child name="Submit_With_Correct_Values_In_All_Fields" key="{AAF89A5B-99B8-4A3C-9FD9-7B1E7C67B8D6}" type="Keyword Test" typeId="{B9D9273E-7266-43E0-BF02-97F168593604}" pluginName="Keyword Testing">
-			<data path="Submit_With_Correct_Values_In_All_Fields.tcKDTest" />
+		<child name="Submit_With_Correct_Values_In_All_Fields" key="{B0C76300-32F4-4DC3-9775-DDCD85145D69}" type="Keyword Test" typeId="{B9D9273E-7266-43E0-BF02-97F168593604}" pluginName="Keyword Testing">
+			<data path="Test Cases\Validate Successful Lead Data\Submit_With_Correct_Values_In_All_Fields.tcKDTest" />
 		</child>
-		<child name="Submit_With_Correct_Values_Only_In_Required_Fields" key="{5A58812B-AD15-4628-B3C9-153B4BAAA99C}" type="Keyword Test" typeId="{B9D9273E-7266-43E0-BF02-97F168593604}" pluginName="Keyword Testing">
-			<data path="Submit_With_Correct_Values_Only_In_Required_Fields.tcKDTest" />
+		<child name="Submit_With_Correct_Values_Only_In_Required_Fields" key="{CAD5951D-812E-4AB0-B9D8-D258785756DA}" type="Keyword Test" typeId="{B9D9273E-7266-43E0-BF02-97F168593604}" pluginName="Keyword Testing">
+			<data path="Test Cases\Validate Successful Lead Data\Submit_With_Correct_Values_Only_In_Required_Fields.tcKDTest" />
 		</child>
-		<child name="Required_Input_Error_Messages" key="{BA45C1E6-EFFF-4B5B-B71A-3340552EA4E8}" type="Keyword Test" typeId="{B9D9273E-7266-43E0-BF02-97F168593604}" pluginName="Keyword Testing">
-			<data path="Required_Input_Error_Messages.tcKDTest" />
+		<child name="Required_Input_Error_Messages" key="{808D538E-E2D0-466A-AFCA-16984326240A}" type="Keyword Test" typeId="{B9D9273E-7266-43E0-BF02-97F168593604}" pluginName="Keyword Testing">
+			<data path="Test Cases\Validate Unsuccessful Lead Data\Required_Input_Error_Messages.tcKDTest" />
+		</child>
+		<child name="Unsuccessful_Submit_With_Empty_Required_Email" key="{1E2D43E4-85E7-4EBC-B5A9-15CEB7CFDB20}" type="Keyword Test" typeId="{B9D9273E-7266-43E0-BF02-97F168593604}" pluginName="Keyword Testing">
+			<data path="Test Cases\Validate Unsuccessful Lead Data\Unsuccessful_Submit_With_Empty_Required_Email.tcKDTest" />
+		</child>
+		<child name="Unsuccessful_Submit_With_Wrong_Format_Required_Email" key="{F365BB65-EE19-4C62-9336-E9A957943346}" type="Keyword Test" typeId="{B9D9273E-7266-43E0-BF02-97F168593604}" pluginName="Keyword Testing">
+			<data path="Test Cases\Validate Unsuccessful Lead Data\Unsuccessful_Submit_With_Wrong_Format_Required_Email.tcKDTest" />
+		</child>
+		<child name="Unsuccessful_Submit_Without_Required_Company_Name" key="{7CF5A342-BBC5-472F-8B78-0C77E122D7A8}" type="Keyword Test" typeId="{B9D9273E-7266-43E0-BF02-97F168593604}" pluginName="Keyword Testing">
+			<data path="Test Cases\Validate Unsuccessful Lead Data\Unsuccessful_Submit_Without_Required_Company_Name.tcKDTest" />
+		</child>
+		<child name="Unsuccessful_Submit_Without_Required_Name" key="{284E5425-EAFC-4146-8156-D0D66FD2FEE7}" type="Keyword Test" typeId="{B9D9273E-7266-43E0-BF02-97F168593604}" pluginName="Keyword Testing">
+			<data path="Test Cases\Validate Unsuccessful Lead Data\Unsuccessful_Submit_Without_Required_Name.tcKDTest" />
+		</child>
+		<child name="Validate_Button_Hover_Changes_IN_PROGRESS" key="{916F490F-9680-43A4-80C8-4BEB7C5B1A47}" type="Keyword Test" typeId="{B9D9273E-7266-43E0-BF02-97F168593604}" pluginName="Keyword Testing">
+			<data path="Test Cases\Validate Lead Page UI\Validate_Button_Hover_Changes_IN_PROGRESS.tcKDTest" />
 		</child>
 	</children>
 	<folders>
 		<folder caption="Test Cases" description="A logical folder that is used to organize project items and elements." moniker="">
-			<references>
-				<ref key="{AAF89A5B-99B8-4A3C-9FD9-7B1E7C67B8D6}" />
-				<ref key="{5A58812B-AD15-4628-B3C9-153B4BAAA99C}" />
-				<ref key="{BA45C1E6-EFFF-4B5B-B71A-3340552EA4E8}" />
-			</references>
+			<folders>
+				<folder caption="Validate Successful Lead Data" description="A logical folder that is used to organize project items and elements." moniker="">
+					<references>
+						<ref key="{B0C76300-32F4-4DC3-9775-DDCD85145D69}" />
+						<ref key="{CAD5951D-812E-4AB0-B9D8-D258785756DA}" />
+					</references>
+				</folder>
+				<folder caption="Validate Unsuccessful Lead Data" description="A logical folder that is used to organize project items and elements." moniker="">
+					<references>
+						<ref key="{808D538E-E2D0-466A-AFCA-16984326240A}" />
+						<ref key="{1E2D43E4-85E7-4EBC-B5A9-15CEB7CFDB20}" />
+						<ref key="{F365BB65-EE19-4C62-9336-E9A957943346}" />
+						<ref key="{7CF5A342-BBC5-472F-8B78-0C77E122D7A8}" />
+						<ref key="{284E5425-EAFC-4146-8156-D0D66FD2FEE7}" />
+					</references>
+				</folder>
+				<folder caption="Validate Lead Page UI" description="A logical folder that is used to organize project items and elements." moniker="">
+					<references>
+						<ref key="{916F490F-9680-43A4-80C8-4BEB7C5B1A47}" />
+					</references>
+				</folder>
+			</folders>
 		</folder>
 	</folders>
 </Root>

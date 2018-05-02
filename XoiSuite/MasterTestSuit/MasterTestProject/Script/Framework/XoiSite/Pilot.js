@@ -68,7 +68,12 @@ function FillCompanyName(companyName)
 */
 function FillCompanyEmail(email)
 {
-  return SiteGlobal.FillTextByKeys(SiteGlobal.pilotPageURL, "email", email);
+  var result = SiteGlobal.FillTextByKeys(SiteGlobal.pilotPageURL, "email", email);
+  //var page = SiteGlobal.GetBrowserPage(SiteGlobal.pilotPageURL);
+  
+  //page.SetFocus();
+  
+  return result;
 }
 
 /*
@@ -106,27 +111,114 @@ function ClickSubmitButton()
     Log.Message("Succfully Clicked Submit button.");
     return true;
   }
+  return false;
   // TODO: Get the generic ButtonClick to work instead.
   //return SiteGlobal.ButtonClick("SubmitButton", "Submit");
 }
 
-function test()
+/*
+ Function: HoverSubmitButton
+
+ Hovers mouse over the Submit Button on the Pilot page
+
+ Returns:
+ Boolean - True/False on success of hovering over the button
+
+*/
+function HoverSubmitButton()
 {
-  GetRequiredFieldMessage();
+  var button = SiteGlobal.FetchObjectByXpath("http://info.xoi.io/pilot", "//input[@type='submit']");
+  if (button != null)
+  {
+    button.HoverMouse();
+    Log.Message("Succfully Hovered over the Submit button.");
+    return true;
+  }
+  return false;
+}
+
+/*
+ Function: GetContactNameErrorMessage
+
+ Returns the error message for the field (if visible)
+ 
+ Returns:
+ String - Required field message. Null if not found
+
+*/
+function GetContactNameErrorMessage()
+{
+  return Pilot.GetRequiredFieldMessage("firstname");
+}
+
+/*
+ Function: GetCompanyNameErrorMessage
+
+ Returns the error message for the field (if visible)
+ 
+ Returns:
+ String - Required field message. Null if not found
+
+*/
+function GetCompanyNameErrorMessage()
+{
+  return Pilot.GetRequiredFieldMessage("company");
+}
+
+/*
+ Function: GetCompanyEmailErrorMessage
+
+ Returns the error message for the field (if visible)
+ 
+ Returns:
+ String - Required field message. Null if not found
+
+*/
+function GetCompanyEmailErrorMessage()
+{
+  return Pilot.GetRequiredFieldMessage("email");
 }
 
 /*
  Function: GetRequiredFieldMessage
 
- Returns the "complete this required field message"
+ Returns the error message for the Required field (if visible)
+
+ Parameters: 
+ requiredFieldName - String - Required field name (Ex. "firstname", "company")
+ 
+ Returns:
+ String - Required field message. Null if not found
+
+*/
+function GetRequiredFieldMessage(requiredFieldName)
+{
+  var messageObject = SiteGlobal.FetchObjectByXpath("http://info.xoi.io/pilot", 
+  // This Xpath uses the input field as an anchor, to then find it's grandparent (the section for the field), the look for a child that is a list with a label.
+  // This allows finding the exact message for that field. If you just look for a list with a label, you might find the error message for a different field.
+  "//input[@name='" + requiredFieldName + "']/parent::div/parent::div/child::ul[@class='hs-error-msgs inputs-list']//label");
+  if (messageObject != null && messageObject.ContentText != "")
+  {
+    var message = messageObject.ContentText;
+    Log.Message("Succfully Found Required Field Message: " + message);
+    return message;
+  }
+  return null;
+}
+
+/*
+ Function: GetFormsRequiredMessage
+
+ Returns the error message for the Leads form (generic rollup of errors)
 
  Returns:
  String - Required field message. Null if not found
 
 */
-function GetRequiredFieldMessage()
+function GetFormsRequiredMessage()
 {
-  var messageObject = SiteGlobal.FetchObjectByXpath("http://info.xoi.io/pilot", "//ul[@class='hs-error-msgs inputs-list']/li/label");
+  // Looks for the generic error rollup div, then gets the list with a label in it.
+  var messageObject = SiteGlobal.FetchObjectByXpath("http://info.xoi.io/pilot", "//div[@class='hs_error_rollup']/child::ul[@class='hs-error-msgs inputs-list']//label");
   if (messageObject != null && messageObject.ContentText != "")
   {
     var message = messageObject.ContentText;

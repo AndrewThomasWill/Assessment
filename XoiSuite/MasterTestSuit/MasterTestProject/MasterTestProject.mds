@@ -22,11 +22,31 @@
 	<config language="{90F89436-9452-4F95-9882-6B5210079F13}" />
 	<testItems key="{94F89D70-2253-44DF-946B-78EB314B5440}">
 		<children>
-			<testItem name="Correct Values in All Fields" key="{C67F96A0-666A-416B-B091-D10FF138B62B}" group="False" enabled="True" testMoniker="KDT\{AAF89A5B-99B8-4A3C-9FD9-7B1E7C67B8D6}" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+			<testItem name="Correct Values in All Fields" key="{C67F96A0-666A-416B-B091-D10FF138B62B}" group="False" enabled="True" testMoniker="KDT\{B0C76300-32F4-4DC3-9775-DDCD85145D69}" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
 				<testParameters />
 				<children />
 			</testItem>
-			<testItem name="Correct Values Only in Required" key="{0AE1B316-1D72-433F-BBAC-397DD149F5B4}" group="False" enabled="True" testMoniker="KDT\{5A58812B-AD15-4628-B3C9-153B4BAAA99C}" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+			<testItem name="Correct Values Only in Required" key="{0AE1B316-1D72-433F-BBAC-397DD149F5B4}" group="False" enabled="True" testMoniker="KDT\{CAD5951D-812E-4AB0-B9D8-D258785756DA}" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+				<testParameters />
+				<children />
+			</testItem>
+			<testItem name="Required Input Error Messages" key="{AE9D6522-52D5-4115-88F7-793B023CD11E}" group="False" enabled="True" testMoniker="KDT\{808D538E-E2D0-466A-AFCA-16984326240A}" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+				<testParameters />
+				<children />
+			</testItem>
+			<testItem name="Unsuccessful Submit Without Required (Name)" key="{49E1EF26-F90B-487A-A2C0-C8C9A13F9FB6}" group="False" enabled="True" testMoniker="KDT\{284E5425-EAFC-4146-8156-D0D66FD2FEE7}" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+				<testParameters />
+				<children />
+			</testItem>
+			<testItem name="Unsuccessful Submit Without Required (Company Name)" key="{9FE5A823-25A3-4208-A092-4EDAABF239DE}" group="False" enabled="True" testMoniker="KDT\{7CF5A342-BBC5-472F-8B78-0C77E122D7A8}" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+				<testParameters />
+				<children />
+			</testItem>
+			<testItem name="Unsuccessful Submit With Empty Required (Email)" key="{7D49CD1E-8BC6-4B7D-82F5-5FBC19244E83}" group="False" enabled="True" testMoniker="KDT\{1E2D43E4-85E7-4EBC-B5A9-15CEB7CFDB20}" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+				<testParameters />
+				<children />
+			</testItem>
+			<testItem name="Unsuccessful Submit With Wrong Format Required (Email)" key="{2E6F13DB-EDAA-407F-A1C9-03826C758D25}" group="False" enabled="True" testMoniker="KDT\{F365BB65-EE19-4C62-9336-E9A957943346}" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
 				<testParameters />
 				<children />
 			</testItem>

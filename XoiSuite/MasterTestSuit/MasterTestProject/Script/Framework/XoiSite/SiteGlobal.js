@@ -6,9 +6,6 @@ Site Variables and Functions that can be used by all lower Modules
   - MiscModule2 (useunit SiteGlobal)
 */
 
-//Import Units
-
-
 // Page URLs
 var pilotPageURL = "http://info.xoi.io/pilot";
 
@@ -17,6 +14,9 @@ var blinkWaitSeconds = 1;
 var quickWaitSeconds = 2;
 var moderateWaitSeconds = 5;
 var maxWaitSeconds = 10;
+
+// Environment Variables
+var currentBrowserShortName = "chrome";
 
 /*
  Function: FillTextByKeys
@@ -44,7 +44,7 @@ function FillTextByKeys(pageURL, objectName, fillText)
       object.Keys("^a"); // Select all text inside
       object.Keys("[Del]"); // Delete all values
       object.Keys(fillText);
-      aqUtils.Delay(SiteGlobal.blinkWaitSeconds);
+      aqUtils.Delay(SiteGlobal.quickWaitSeconds);
     }
     
     return (object.value == fillText); 
@@ -151,7 +151,7 @@ function WaitForPageLoad(pageURL)
 function GetBrowserPage(pageURL)
 {
   // TODO: Update needed for chrome compatability
-  return Sys.Browser("iexplore").Page(pageURL);
+  return Sys.Browser(currentBrowserShortName).Page(pageURL);
 }
 
 /*
@@ -169,7 +169,7 @@ function GetBrowserPage(pageURL)
 function AssertCurrentPageEqualsURL(pageURL)
 {
   // TODO: Update needed for chrome compatability
-  var currentURLPage = Sys.Browser("iexplore").Page(pageURL);
+  var currentURLPage = Sys.Browser(currentBrowserShortName).Page(pageURL);
   
   if (currentURLPage.Exists)
   {
@@ -323,7 +323,7 @@ function NavigateBrowser(pageURL, maxLoadTime)
  Opens browser with a given page URL
 
  Parameters: 
- browserName   - String - "iexplore" only at this time.
+ browserName   - String - "iexplore" or "chrome"
  pageURL       - String - URL of the page with the object (must be current page)
 
  Returns:
@@ -333,24 +333,25 @@ function LaunchNewBrowser(browserName, pageURL)
 {
   try
   {
-    if (aqString.Compare(browserName, "iexplore", true) != 0) //&& aqString.Compare(browserName, "chrome", true) != 0)
+    if (aqString.Compare(browserName, "iexplore", true) != 0 && aqString.Compare(browserName, "chrome", true) != 0)
     {
-      Log.Error("Incorrect parameter sent to LaunchNewBrowser(). Please send 'iexplore' for now.")
+      Log.Error("Incorrect parameter sent to LaunchNewBrowser(). Please send 'iexplore' or 'chrome' for now.")
       return false;
     }
-
-    Browsers.Item(browserName).RunOptions = "";
-    Browsers.Item(browserName).Run(pageURL);
+    
+    currentBrowserShortName = browserName;
+    Browsers.Item(currentBrowserShortName).RunOptions = "";
+    Browsers.Item(currentBrowserShortName).Run(pageURL);
 
     var page = SiteGlobal.GetBrowserPage(pageURL);
     
     if (page.Exists && (pageURL == page.Url))
     {
-      Log.Message("Browser: " + browserName + " launched and Page: " + pageURL + " was navigated to.");
+      Log.Message("Browser: " + currentBrowserShortName + " launched and Page: " + pageURL + " was navigated to.");
       return true;
     }
     
-    Log.Error("Failed to launch Browser: " + browserName + " and navigate to Page: " + pageURL);
+    Log.Error("Failed to launch Browser: " + currentBrowserShortName + " and navigate to Page: " + pageURL);
     return false;
   }
   catch (exception)
@@ -372,10 +373,11 @@ function CloseBrowser()
   try
   {
     // If it is open
-    if (Sys.WaitProcess("iexplore", 500).Exists)
+    if (Sys.WaitProcess(currentBrowserShortName, 500).Exists)
     {
-      Sys.Browser("iexplore").Terminate();
-      if (Sys.WaitProcess("iexplore", 500).Exists)
+      Sys.Browser(currentBrowserShortName).Terminate();
+      aqUtils.Delay(SiteGlobal.quickWaitSeconds);
+      if (Sys.WaitProcess(currentBrowserShortName, 500).Exists)
       {
         Log.Error("Failed to close browser.");
         return false;
@@ -411,7 +413,7 @@ function ButtonClick(v1, v2)
   try
   {
     // TODO: Update needed for chrome compatability
-    var button = SiteGlobal.FetchObjectByProperty(Sys.Browser("iexplore"),"ObjectType", v1, "Name", v2);
+    var button = SiteGlobal.FetchObjectByProperty(Sys.Browser(currentBrowserShortName),"ObjectType", v1, "Name", v2);
   
     if (button != null && button.Visible && button.Enabled)
     {

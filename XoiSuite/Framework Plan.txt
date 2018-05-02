@@ -1,3 +1,6 @@
+1. Fill out each one of the fields in IE
+2. 
+
 Function Comment Format
 /*
  Function: FillTextByKeys
@@ -27,9 +30,14 @@ Script
 			- WaitForObjectByXpath(page, xPath)
 			- WaitForPageLoad(pageURL)
 	    - Pilot (Module)
+		    -
+			
 		    - FillContactName(name)
 			- FillJobTitle(title)
 			- FillCompanyName(companyName)
 			- FillCompanyEmail(email)
 			- FillPhoneNumber(phoneNumber)
 			- ClickSubmitButton
+	- UtilityModules (Folder)
+	    - Utility (Module)
+		    
